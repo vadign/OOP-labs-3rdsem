@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.cpp
+NIP.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.h
+checks.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.h
+fstream
+-
+list
+-
+map
+-
+string
+-
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.h
+map
+-
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.h
+

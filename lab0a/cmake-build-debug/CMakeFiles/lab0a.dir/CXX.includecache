@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0a/main.cpp
+module1.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0a/module1.h
+module2.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0a/module2.h
+module3.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0a/module3.h
+iostream
+-
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0a/module1.h
+string
+-
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0a/module2.h
+string
+-
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0a/module3.h
+string
+-
+
