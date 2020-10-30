@@ -1,7 +1,7 @@
 #include <iostream>
-#include "checks.h"
 
-#include "NIP.h"
+
+#include "actions.h"
 
 int main(const int argc, char **argv) {
 

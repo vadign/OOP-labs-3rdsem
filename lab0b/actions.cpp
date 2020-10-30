@@ -1,9 +1,8 @@
-#include "NIP.h"
+#include "actions.h"
 #include "checks.h"
 #include <fstream>
 #include <list>
 #include <map>
-#include <string>
 
 using namespace std;
 

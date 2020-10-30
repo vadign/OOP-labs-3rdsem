@@ -1,5 +1,5 @@
-#ifndef LAB0B_NIP_H
-#define LAB0B_NIP_H
+#ifndef LAB0B_ACTIONS_H
+#define LAB0B_ACTIONS_H
 
 #include <map>
 
@@ -23,4 +23,4 @@ private:
 };
 
 
-#endif //LAB0B_NIP_H
+#endif //LAB0B_ACTIONS_H
