@@ -6,9 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.cpp
-NIP.h
-/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.cpp
+checks.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.h
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.h
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/main.cpp
+iostream
+-
+taskDoned.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/taskDoned.h
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/taskDoned.cpp
+taskDoned.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/taskDoned.h
 checks.h
 /Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.h
 fstream
@@ -17,12 +29,8 @@ list
 -
 map
 -
-string
--
 
-/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/taskDoned.h
 map
 -
-
-/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.h
 

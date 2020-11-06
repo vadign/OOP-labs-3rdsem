@@ -12,11 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74c4ccf-713f-4ec4-8e45-e6bf4afb7128" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NIP.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/actions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NIP.h" beforeDir="false" afterPath="$PROJECT_DIR$/actions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/taskDoned.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions.h" beforeDir="false" afterPath="$PROJECT_DIR$/taskDoned.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checks.h" beforeDir="false" afterPath="$PROJECT_DIR$/checks.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab0b.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab0b.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab0b.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab0b.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab0b.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab0b.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab0b.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab0b.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab0b" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab0b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +92,7 @@
       <workItem from="1604002925819" duration="2491000" />
       <workItem from="1604037764942" duration="831000" />
       <workItem from="1604057308636" duration="147000" />
+      <workItem from="1604640416882" duration="812000" />
     </task>
     <servers />
   </component>
@@ -93,22 +100,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="80" key="GridCell.Tab.0.bottom" timestamp="1604039748439">
+    <state width="1398" height="80" key="GridCell.Tab.0.bottom" timestamp="1604640604943">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="80" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604039748439" />
-    <state width="1398" height="80" key="GridCell.Tab.0.center" timestamp="1604039748438">
+    <state width="1398" height="80" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604640604943" />
+    <state width="1398" height="80" key="GridCell.Tab.0.center" timestamp="1604640604942">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="80" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604039748438" />
-    <state width="1398" height="80" key="GridCell.Tab.0.left" timestamp="1604039748437">
+    <state width="1398" height="80" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604640604942" />
+    <state width="1398" height="80" key="GridCell.Tab.0.left" timestamp="1604640604941">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="80" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604039748437" />
-    <state width="1398" height="80" key="GridCell.Tab.0.right" timestamp="1604039748438">
+    <state width="1398" height="80" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604640604941" />
+    <state width="1398" height="80" key="GridCell.Tab.0.right" timestamp="1604640604942">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="80" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604039748438" />
+    <state width="1398" height="80" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604640604942" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1601713019633">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -125,10 +132,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1601713019633" />
-    <state x="393" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1604057309015">
+    <state x="393" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1604640416036">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="393" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1604057309015" />
+    <state x="393" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1604640416036" />
+    <state x="527" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604640771076">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="527" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1604640771076" />
     <state x="448" y="91" key="refactoring.ChangeSignatureDialog" timestamp="1603220954959">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

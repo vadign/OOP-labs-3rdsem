@@ -1,5 +1,5 @@
-#ifndef LAB0B_ACTIONS_H
-#define LAB0B_ACTIONS_H
+#ifndef LAB0B_TASKDONED_H
+#define LAB0B_TASKDONED_H
 
 #include <map>
 
@@ -23,4 +23,4 @@ private:
 };
 
 
-#endif //LAB0B_ACTIONS_H
+#endif //LAB0B_TASKDONED_H

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lab0b.dir/NIP.cpp.o"
   "CMakeFiles/lab0b.dir/checks.cpp.o"
   "CMakeFiles/lab0b.dir/main.cpp.o"
+  "CMakeFiles/lab0b.dir/taskDoned.cpp.o"
   "lab0b"
   "lab0b.pdb"
 )

@@ -83,31 +83,31 @@ CMakeFiles/lab0b.dir/checks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab0b.dir/checks.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.cpp" -o CMakeFiles/lab0b.dir/checks.cpp.s
 
-CMakeFiles/lab0b.dir/NIP.cpp.o: CMakeFiles/lab0b.dir/flags.make
-CMakeFiles/lab0b.dir/NIP.cpp.o: ../NIP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab0b.dir/NIP.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab0b.dir/NIP.cpp.o -c "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.cpp"
+CMakeFiles/lab0b.dir/taskDoned.cpp.o: CMakeFiles/lab0b.dir/flags.make
+CMakeFiles/lab0b.dir/taskDoned.cpp.o: ../taskDoned.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab0b.dir/taskDoned.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab0b.dir/taskDoned.cpp.o -c "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/taskDoned.cpp"
 
-CMakeFiles/lab0b.dir/NIP.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab0b.dir/NIP.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.cpp" > CMakeFiles/lab0b.dir/NIP.cpp.i
+CMakeFiles/lab0b.dir/taskDoned.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab0b.dir/taskDoned.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/taskDoned.cpp" > CMakeFiles/lab0b.dir/taskDoned.cpp.i
 
-CMakeFiles/lab0b.dir/NIP.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab0b.dir/NIP.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.cpp" -o CMakeFiles/lab0b.dir/NIP.cpp.s
+CMakeFiles/lab0b.dir/taskDoned.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab0b.dir/taskDoned.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/taskDoned.cpp" -o CMakeFiles/lab0b.dir/taskDoned.cpp.s
 
 # Object files for target lab0b
 lab0b_OBJECTS = \
 "CMakeFiles/lab0b.dir/main.cpp.o" \
 "CMakeFiles/lab0b.dir/checks.cpp.o" \
-"CMakeFiles/lab0b.dir/NIP.cpp.o"
+"CMakeFiles/lab0b.dir/taskDoned.cpp.o"
 
 # External object files for target lab0b
 lab0b_EXTERNAL_OBJECTS =
 
 lab0b: CMakeFiles/lab0b.dir/main.cpp.o
 lab0b: CMakeFiles/lab0b.dir/checks.cpp.o
-lab0b: CMakeFiles/lab0b.dir/NIP.cpp.o
+lab0b: CMakeFiles/lab0b.dir/taskDoned.cpp.o
 lab0b: CMakeFiles/lab0b.dir/build.make
 lab0b: CMakeFiles/lab0b.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lab0b"

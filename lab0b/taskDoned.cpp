@@ -1,4 +1,4 @@
-#include "actions.h"
+#include "taskDoned.h"
 #include "checks.h"
 #include <fstream>
 #include <list>
@@ -20,6 +20,9 @@ void taskDoned::readFile(string input) {
 
     ifstream fin;
     fin.open(input, fstream::in);
+    if(!fin) {
+        throw logic_error("Unable to open input file.");
+    }
 
     string buffer;
     string currentWord;
@@ -66,6 +69,9 @@ void taskDoned::sortingAndWriting(string output) {
 
     ofstream fout;
     fout.open(output, fstream::out);
+    if(!fout) {
+        throw std::logic_error("Unable to open output file.");
+    }
 
     list<pair<string, int>>::iterator iq;
 

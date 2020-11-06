@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/NIP.cpp" "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/cmake-build-debug/CMakeFiles/lab0b.dir/NIP.cpp.o"
   "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/checks.cpp" "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/cmake-build-debug/CMakeFiles/lab0b.dir/checks.cpp.o"
   "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/main.cpp" "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/cmake-build-debug/CMakeFiles/lab0b.dir/main.cpp.o"
+  "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/taskDoned.cpp" "/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab0b/cmake-build-debug/CMakeFiles/lab0b.dir/taskDoned.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

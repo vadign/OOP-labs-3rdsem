@@ -1,13 +1,17 @@
 #include <iostream>
 
 
-#include "actions.h"
+#include "taskDoned.h"
 
 int main(const int argc, char **argv) {
 
+    if (argc != 3){
+        throw logic_error("Not enough arguments");
+    }
+
     taskDoned task;
-    string input = argv[1];
-    string output = argv[2];
+    const string &input = argv[1];
+    const string &output = argv[2];
 
     task.readFile(input);
     task.sortingAndWriting(output);

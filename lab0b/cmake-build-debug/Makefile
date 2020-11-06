@@ -123,33 +123,6 @@ lab0b/fast:
 	$(MAKE) -f CMakeFiles/lab0b.dir/build.make CMakeFiles/lab0b.dir/build
 .PHONY : lab0b/fast
 
-NIP.o: NIP.cpp.o
-
-.PHONY : NIP.o
-
-# target to build an object file
-NIP.cpp.o:
-	$(MAKE) -f CMakeFiles/lab0b.dir/build.make CMakeFiles/lab0b.dir/NIP.cpp.o
-.PHONY : NIP.cpp.o
-
-NIP.i: NIP.cpp.i
-
-.PHONY : NIP.i
-
-# target to preprocess a source file
-NIP.cpp.i:
-	$(MAKE) -f CMakeFiles/lab0b.dir/build.make CMakeFiles/lab0b.dir/NIP.cpp.i
-.PHONY : NIP.cpp.i
-
-NIP.s: NIP.cpp.s
-
-.PHONY : NIP.s
-
-# target to generate assembly for a file
-NIP.cpp.s:
-	$(MAKE) -f CMakeFiles/lab0b.dir/build.make CMakeFiles/lab0b.dir/NIP.cpp.s
-.PHONY : NIP.cpp.s
-
 checks.o: checks.cpp.o
 
 .PHONY : checks.o
@@ -204,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/lab0b.dir/build.make CMakeFiles/lab0b.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+taskDoned.o: taskDoned.cpp.o
+
+.PHONY : taskDoned.o
+
+# target to build an object file
+taskDoned.cpp.o:
+	$(MAKE) -f CMakeFiles/lab0b.dir/build.make CMakeFiles/lab0b.dir/taskDoned.cpp.o
+.PHONY : taskDoned.cpp.o
+
+taskDoned.i: taskDoned.cpp.i
+
+.PHONY : taskDoned.i
+
+# target to preprocess a source file
+taskDoned.cpp.i:
+	$(MAKE) -f CMakeFiles/lab0b.dir/build.make CMakeFiles/lab0b.dir/taskDoned.cpp.i
+.PHONY : taskDoned.cpp.i
+
+taskDoned.s: taskDoned.cpp.s
+
+.PHONY : taskDoned.s
+
+# target to generate assembly for a file
+taskDoned.cpp.s:
+	$(MAKE) -f CMakeFiles/lab0b.dir/build.make CMakeFiles/lab0b.dir/taskDoned.cpp.s
+.PHONY : taskDoned.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab0b"
-	@echo "... NIP.o"
-	@echo "... NIP.i"
-	@echo "... NIP.s"
 	@echo "... checks.o"
 	@echo "... checks.i"
 	@echo "... checks.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... taskDoned.o"
+	@echo "... taskDoned.i"
+	@echo "... taskDoned.s"
 .PHONY : help
 
 
