@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab1/LinkedList.cpp
+LinkedList.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab1/LinkedList.h
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab1/LinkedList.h
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab1/const_iterator.cpp
+LinkedList.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab1/LinkedList.h
+
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab1/iterator.cpp
+LinkedList.h
+/Users/vadign/Desktop/3 семестр/Лабораторные ОООП/lab1/LinkedList.h
+
