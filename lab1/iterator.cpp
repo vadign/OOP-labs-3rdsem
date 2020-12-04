@@ -52,11 +52,11 @@ LinkedList::iterator LinkedList::iterator::operator--(int) {
 }
 
 LinkedList::iterator LinkedList::begin() {
-    return LinkedList::iterator(LinkedList::endOfList->next);
+    return LinkedList::iterator(LinkedList::listEnd->next);
 }
 
 LinkedList::iterator LinkedList::end() {
-    return LinkedList::iterator(endOfList);
+    return LinkedList::iterator(listEnd);
 }
 
 LinkedList::iterator LinkedList::erase(LinkedList::iterator position) {

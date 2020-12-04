@@ -23,15 +23,15 @@ LinkedList::List::List(const value_type &val) {
 
 
 LinkedList::LinkedList() {
-    endOfList = new List();
-    endOfList->next = endOfList;
-    endOfList->prev = endOfList;
+    listEnd = new List();
+    listEnd->next = listEnd;
+    listEnd->prev = listEnd;
 }
 
 LinkedList::LinkedList(const LinkedList &other) {
 
-    endOfList = new List();
-    for (List *i = other.endOfList->next; i != other.endOfList->prev; i = i->next) {
+    listEnd = new List();
+    for (List *i = other.listEnd->next; i != other.listEnd->prev; i = i->next) {
         push_back(i->value);
     }
     curSize = other.curSize;
@@ -39,21 +39,21 @@ LinkedList::LinkedList(const LinkedList &other) {
 }
 
 LinkedList::LinkedList(LinkedList &&other) {
-    endOfList = new List();
+    listEnd = new List();
 
     *this = other;
     curSize = other.curSize;
 
-    other.endOfList->next = nullptr;
-    other.endOfList->prev = nullptr;
+    other.listEnd->next = nullptr;
+    other.listEnd->prev = nullptr;
     other.curSize = 0;
 }
 
 LinkedList::~LinkedList() { // нужно зациклить
-    while (endOfList != endOfList->next) {
-        List *temp = endOfList->next;
-        delete endOfList;
-        endOfList = temp;
+    while (listEnd != listEnd->next) {
+        List *temp = listEnd->next;
+        delete listEnd;
+        listEnd = temp;
     }
 }
 
@@ -61,7 +61,7 @@ LinkedList &LinkedList::operator=(const LinkedList &other) {
 
     this->clear();
 
-    for (auto i = other.endOfList->next; i != other.endOfList; i = i->next)
+    for (auto i = other.listEnd->next; i != other.listEnd; i = i->next)
         this->push_back(i->value);
 
     return *this;
@@ -70,9 +70,9 @@ LinkedList &LinkedList::operator=(const LinkedList &other) {
 LinkedList &LinkedList::operator=(LinkedList &&other) {
     this->clear();
 
-    this->endOfList = other.endOfList;
+    this->listEnd = other.listEnd;
 
-    other.endOfList = nullptr;
+    other.listEnd = nullptr;
     other.curSize = 0;
 
     return *this;
@@ -146,7 +146,7 @@ void LinkedList::push_front(const value_type &value) {
 }
 
 LinkedList &LinkedList::operator+=(const LinkedList &other) {
-    for (auto cur = other.endOfList->next; cur != other.endOfList; cur = cur->next)
+    for (auto cur = other.listEnd->next; cur != other.listEnd; cur = cur->next)
         push_back(cur->value);
 
     return (*this);
@@ -169,11 +169,11 @@ bool operator!=(const LinkedList &left, const LinkedList &right) {
 */
 
 bool operator!=(const LinkedList &left, const LinkedList &right) {
-    auto curLeft = left.endOfList->next;
-    auto curRight = right.endOfList->next;
+    auto curLeft = left.listEnd->next;
+    auto curRight = right.listEnd->next;
 
     while (curLeft->value == curRight->value) {
-        if ((curLeft == left.endOfList && curRight == right.endOfList)) return false;
+        if ((curLeft == left.listEnd && curRight == right.listEnd)) return false;
         curLeft++;
         curRight++;
     }

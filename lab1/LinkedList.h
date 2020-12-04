@@ -19,7 +19,7 @@ private:
 
     };
 
-    static List *endOfList;
+    static List *listEnd;
     int curSize = 0;
 
 public:

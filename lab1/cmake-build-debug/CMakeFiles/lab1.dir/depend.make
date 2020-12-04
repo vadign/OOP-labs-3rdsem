@@ -13,5 +13,7 @@ CMakeFiles/lab1.dir/const_iterator.cpp.o: ../const_iterator.cpp
 CMakeFiles/lab1.dir/iterator.cpp.o: ../LinkedList.h
 CMakeFiles/lab1.dir/iterator.cpp.o: ../iterator.cpp
 
+CMakeFiles/lab1.dir/main.cpp.o: ../LinkedList.h
+CMakeFiles/lab1.dir/main.cpp.o: ../catch2.hpp
 CMakeFiles/lab1.dir/main.cpp.o: ../main.cpp
 

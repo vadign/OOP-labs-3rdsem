@@ -55,19 +55,19 @@ LinkedList::const_iterator LinkedList::const_iterator::operator--(int) {
 }
 
 LinkedList::const_iterator LinkedList::begin() const {
-    return LinkedList::const_iterator(endOfList->next);
+    return LinkedList::const_iterator(listEnd->next);
 }
 
 LinkedList::const_iterator LinkedList::cbegin() const {
-    return LinkedList::const_iterator(endOfList->next);
+    return LinkedList::const_iterator(listEnd->next);
 }
 
 LinkedList::const_iterator LinkedList::end() const {
-    return LinkedList::const_iterator(endOfList);
+    return LinkedList::const_iterator(listEnd);
 }
 
 LinkedList::const_iterator LinkedList::cend() const {
-    return LinkedList::const_iterator(endOfList);
+    return LinkedList::const_iterator(listEnd);
 }
 
 
