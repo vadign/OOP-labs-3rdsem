@@ -13,8 +13,6 @@ private:
 
         List();
 
-        explicit List(value_type &val);
-
         explicit List(const value_type &val);
 
     };
@@ -168,11 +166,6 @@ public:
     /* Операторы внутренние */
     //Присоединяет other к списку.
     LinkedList &operator+=(const LinkedList &other);
-
-    /* Операторы внешние */
-    friend bool operator!=(const LinkedList &left, const LinkedList &right);
-
-    friend bool operator==(const LinkedList &left, const LinkedList &right);
 
 };
 

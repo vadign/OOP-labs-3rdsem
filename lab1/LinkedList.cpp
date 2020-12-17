@@ -1,15 +1,10 @@
 
 #include "LinkedList.h"
+#include <stdexcept>
 
 
 LinkedList::List::List() {
     value = value_type();
-    next = nullptr;
-    prev = nullptr;
-}
-
-LinkedList::List::List(value_type &val) {
-    value = val;
     next = nullptr;
     prev = nullptr;
 }
@@ -39,27 +34,27 @@ LinkedList::LinkedList(const LinkedList &other) {
 }
 
 LinkedList::LinkedList(LinkedList &&other) {
-    listEnd = new List();
 
-    *this = other;
+    listEnd = other.listEnd;
     curSize = other.curSize;
 
-    other.listEnd->next = nullptr;
-    other.listEnd->prev = nullptr;
+    other.listEnd = nullptr;
     other.curSize = 0;
+
 }
 
-LinkedList::~LinkedList() { // нужно зациклить
-    while (listEnd != listEnd->next) {
-        List *temp = listEnd->next;
-        delete listEnd;
-        listEnd = temp;
-    }
+LinkedList::~LinkedList() {
+    clear();
+    delete listEnd;
+
 }
 
 LinkedList &LinkedList::operator=(const LinkedList &other) {
 
-    this->clear();
+    if (this->listEnd == other.listEnd)
+        return (*this);
+
+        this->clear();
 
     for (auto i = other.listEnd->next; i != other.listEnd; i = i->next)
         this->push_back(i->value);
@@ -68,6 +63,10 @@ LinkedList &LinkedList::operator=(const LinkedList &other) {
 }
 
 LinkedList &LinkedList::operator=(LinkedList &&other) {
+
+    if (this == &other)
+        return (*this);
+
     this->clear();
 
     this->listEnd = other.listEnd;
@@ -88,19 +87,31 @@ bool LinkedList::empty() const {
 }
 
 value_type &LinkedList::front() {
+    if (empty())
+        throw std::logic_error("list is empty");
+
     return *begin();
 }
 
 const value_type &LinkedList::front() const {
+    if (empty())
+        throw std::logic_error("list is empty");
+
     return *cbegin();
 }
 
 value_type &LinkedList::back() {
+    if (empty())
+        throw std::logic_error("list is empty");
+
     end()--;
     return *end();
 }
 
 const value_type &LinkedList::back() const {
+    if (empty())
+        throw std::logic_error("list is empty");
+
     cend()--;
     return *cend();
 }
@@ -110,7 +121,6 @@ int LinkedList::remove(const value_type &value) {
     for (iterator i = begin(); i != end(); i++)
         if (*i == value) {
             erase(i);
-            curSize--;
         }
 
     return 0;
@@ -119,15 +129,11 @@ int LinkedList::remove(const value_type &value) {
 void LinkedList::clear() {
     for (iterator i = begin(); i != end(); i++) {
         erase(i);
-        curSize--;
     }
 }
 
 void LinkedList::pop_back() {
-    LinkedList::iterator i = end();
-    end()--;
-
-    erase(i);
+    erase(--(end()))
 }
 
 void LinkedList::pop_front() {
